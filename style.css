@@ -8,8 +8,8 @@ html {
 }
 
 body::-webkit-scrollbar {
-    width: 0; 
-  }
+    width: 0;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -67,11 +67,17 @@ body {
     display: none;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:800px) {
 
     .navBar_menu {
         display: block;
         cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        background-color: transparent;
+    }
+
+    .scroll_animation {
+        transition: 1s;
     }
 
     .navBar_container_elements {
@@ -83,6 +89,8 @@ body {
 .close {
     text-align: right;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
 }
 
 .side_navbar {
@@ -538,10 +546,10 @@ input:focus {
     background-color: #0056b3;
 }
 
-.scroll_animation{
+.scroll_animation {
     transition: 3s;
 }
 
-.remove_scroll_animation{
+.remove_scroll_animation {
     opacity: 0;
 }
