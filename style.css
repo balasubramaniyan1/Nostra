@@ -50,12 +50,15 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 50%;
+    width: 60%;
 }
 
 .navBar_container_elements a {
     color: #1D232C;
     text-decoration: none;
+    background-color: #c7c9c4;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .navBar_container_elements a:hover {
